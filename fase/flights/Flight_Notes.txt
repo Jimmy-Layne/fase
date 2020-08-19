@@ -1,0 +1,157 @@
+RF01 July 18, 2016
+
+Shakedown flight, 1.6 hrs
+
+
+
+RF02 July 22, 2016
+
+Fog flight. Up to Half Moon Bay region with a box offset from the coast by about 3 miles, and boundaries parallel/orthogonal to the ADIZ. 
+
+Fog base was below 300 ft, so the surface flux run was at 300 ft. Fog appears to slightly thin over time. 
+
+Inversion is about 5 or 6 C, but over about 200 ft (60 m). Not clear if there's much of a moisture inversion. 
+
+Box is 37 km x 28 km (diagonal 46 km). 
+
+Post-flight Debrief:
+
+5.2 hrs. 
+
+Takeoff 8:22 am
+
+Tops 900 to 1200' throughout the day. 
+
+
+
+RF03 July 25, 2016
+
+5.7 hrs
+
+Cloud contrast (using Clearings plan). Straight out west to a line across which the cloud appeared (in the morning) to have different properties. Not sure if in the end there was much contrast. Returned into Salinas. Soberanes fire broke out this morning. [Addendum: continues through to the end of the project]
+
+
+
+RF04 July 26, 2016
+
+Fog flight off of Big Sur. Smoke during the entire flight. Tops 500', bases below 300'. 
+
+
+
+RF05 July 27, 2016 
+
+Mini diurnal cycle flight. Ran a line along the ADIZ which seemed pretty close to the wind vector. [Addendum: Summer's back trajectory analysis shows it was pretty darn good.]
+
+Couldn't get down past 300'. Tops steady at 1000' all day. 
+
+Couldn't get PDI to work. 
+
+4.4 hrs
+
+Addendum: PDI problem. Laser did not turn on all day. 
+
+
+
+RF06 July 29, 2016
+
+Full diurnal cycle flight. Marina to Santa Rosa for fuel, transit out to station, run A-B, back to Santa Rosa. Return to run B'-A', back to Salinas. Long day. 
+
+PDI wasn't working until partway through transit out from SR to station.
+
+Otherwise, everything went very well it seems. Not sure how much evolution occurred, but that in itself is pretty neat. 
+
+
+
+RF07 Aug 1, 2016
+
+First real clearing. Ferry to Santa Rosa. Hit a waypoint near 38.5 N/125 W. Started the pattern. Found ourselves drifting too far south and out of the clearing, suggesting that the clearing is definitely not purely advecting (which we probably already knew). In any case, the Lagrangian pattern didn't seem like a good call.
+
+Partway through the cloud base leg, the data system died. Tried to revive it but no luck. Otter was directed straight home. Starting around 2330 Z (3:30 pm local), started a pure cloud bases run to see if we can find drizzle. 
+
+
+
+RF08 Aug 2, 2016
+
+Clearing moved further south. Hit a waypoint near 37.5 N/124 W (straight west from Half Moon Bay). Doing fixed waypoints instead of Lagrangian like yesterday. 
+
+Pattern worked. Fixed waypoint was much better than flying times and headings as per the original plan. I sure seems obvious now that these boundaries have nothing to do with Lagrangian parcels and that the winds are definitely not parallel to the boundary. 
+
+Clouds near the boundary were quite thin. We did a few lines (sawtooth cloud top, mid-cloud, cloud base and surface). Sometimes sawtooth came out below cloud base. After one set of level legs, we tried the sawtooth box idea and got maybe 6 or 7 complete sawtooths in.
+
+
+
+RF09 Aug 3, 2016
+
+Two flights today. Both to the clearing at roughly the same location.
+
+The clearing boundary expanded overnight (though filled in some before sunrise). We went to spot roughly level with Santa Cruz at 123.3 W. Both times we did the “classic” clearing flight plan. The first flight, the boundary was relatively easy to identify. Not sure about the second time (plane still not returned). 
+
+
+
+RF10 Aug 4, 2016
+
+Fog flight to Morro Bay-San Simeon area. Partly to get out of the fog. Extensive early morning fog blanketing the coast. Hopefully something happens during the course of the day!
+
+Didn't manage to escape the smoke. Looks like it's confined to the coast, so the closer-to-shore part of the box. But it's still there in spades close to shore. 
+
+By the end, the clouds pretty much cleared out of our box which was great. 
+
+PDI stopped working partway, then re-started again some time later. Not sure what resuscitated it, but it's possible that some loose connections on the back were involved.
+
+
+
+RF11 Aug 5, 2016
+
+Supposed to be a marathon flight, but it's practically raining in parts along the coast. A shortwave is supposed to pass through here today so it may very well cause the clouds to breakup. So not a very clean case. 
+
+Instead, we're just running in cloud for 3 hrs or so to get some nice data with lots of heavy drizzle. This is a great day for CIP/PDI intercomparison!!!! Lots of large drops (up to 250 um) reported by Summer.
+
+Something happened to the PDI time on this day. It somehow reset its time to July 16 (no flight on that day). Somehow have to re-create this.
+
+
+
+RF12 Aug 8, 2016
+
+Clearing flight. Worked pretty well by all accounts. Wind speeds higher in the clearing (?). And PCASP much higher above cloud. Are either of these consistent trends for these clearings? 
+
+Wind speed as the trigger for cloud being wiped out makes sense. Enough shear-generated turbulence creates enough entrainment to wipe out the cloud. 
+
+
+
+RF13 Aug 9, 2016
+
+Going up and down the inside of the ADIZ to see if we can see an Nd gradient due to smoke. Could use this for precip susceptibility or just understanding the relationship between Nd and drizzle. Some fairly large LWP values (CT peak LWC as high as 0.7 g/m3, many above 0.6) at the northern end (near Half Moon Bay), while further south see much thinner clouds and LWP. 
+
+
+
+RF14 Aug 10, 2016
+
+We thought the smoke was going south, but winds calmed and slightly reversed. There's smoke as far north as Moss Landing, though not in Santa Cruz. Not sure if will affect today's flight. [Addendum: not in any obvious way. FSSP counts are quite low for the most part.] 
+
+There was an aircraft in the vicinity of the area near the beginning of the module so the first tendency leg got cut short, and there was a pause waiting for it to clear.
+
+The winds are showing the same coastal reversal pattern that we saw earlier: winds are southerly close to the coast, and northerly farther out. An interesting wrinkle. Does this horizontal “shear” generate extra turbulence?
+
+Cloud definitely thins during the course of the flight. 
+
+[off-shore fog box, we think]
+
+
+
+RF15 Aug 11, 2016
+
+Diurnal flight. 
+
+The winds close to shore were southerly, and only out further were northerly. I made the mistake of not sending the T/O out far enough for the initial Point A, which meant that on the winds heading they were on (about 0 true), there was an intercept path with the ADIZ. So after 2 full modules, we re-positioned the aircraft by flying 8 minutes to the west, then continuing. Out there, wind heading was much more westerly (around 320 to 330) so there was no problem with hitting the ADIZ.
+
+So the region we're working on has some curl to it, so we'll do the best that we can. Winds were very light at the southern part of the line (often less than 5 m/s). This helps keep errors in check. 
+
+So from Point A to Point B, we flew two modules, jogged west, then flew one final module. We'll try to repeat this on the way home. One module, jog east 8 minutes, two more modules. 
+
+On way back, picked Point B' based on winds. I think that choice was OK. But then the winds became really slack in this vortex region, so we adjusted heading to stay parallel to ADIZ, then by the end of Module 1, just decided to fly parallel to our original path since winds are so slack. 
+
+
+
+RF16 Aug 12, 2016
+
+Fog box over the open ocean. Southeast of Big Sur, where there shouldn't be too much smoke. One module only. Looking pretty good so far. 

@@ -1,0 +1,1 @@
+ffmpeg -i SEL_50_20160726.1300.goes_15.visir.bckgr.NorthAmerica-CONUS-West_x-California-x.DAY.avi img%04d.png
