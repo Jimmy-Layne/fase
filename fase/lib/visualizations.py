@@ -1,10 +1,13 @@
+'''These form the visualization routines for our work in the fase project.'''
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
 #from mpl_toolkits.basemap import Basemap
+from os import getcwd
 import pandas as pd
 
-'''These form the visualization routines for our work in the fase project.'''
+
+BASE_DIR = getcwd()
 
 
 def budget(budget,phi='qt',tend='FullTend',res='FTres',cloud_filter=False,date="",save=False,show=True):
@@ -27,11 +30,10 @@ def budget(budget,phi='qt',tend='FullTend',res='FTres',cloud_filter=False,date="
     ax.legend(loc='center left',bbox_to_anchor=(1,0.5))
 
     if save:
-        figname="/home/mrmisanthropy/Projects/fase/outputs/figures/"+date+"/{}_budget-".format(phi)+date+".png"
+        figname=BASE_DIR+"../outputs/figures/"+date+"/{}_budget-".format(phi)+date+".png"
         plt.savefig(figname)
     if show:
         plt.show()
-
 
 
 def term_comparison(budget,cloud_filter):
@@ -68,9 +70,8 @@ def profiles(date,save=False,show=True):
     ''' This function plots the qt,ql, and theta profiles for the date provided'''
     
     # Load the profile arrays
-    pr_fname="/home/mrmisanthropy/Projects/fase/fase/flights/"+date+"/profile-"+date+".csv"
-    cbn_fname="/home/mrmisanthropy/Projects/fase/fase/flights/"+date+"/CABIN_10hz_"+date+".TXT"
-    
+    pr_fname = BASE_DIR+"flights/"+date+"/profile-"+date+".csv"
+    cbn_fname = BASE_DIR+"flights/"+date+"/CABIN_10hz_"+date+".TXT"
     
     pr_index=np.loadtxt(pr_fname,delimiter=",")
     cbn_file=pd.read_csv(cbn_fname)
@@ -82,11 +83,9 @@ def profiles(date,save=False,show=True):
     
     qv1=cbn_file['MR-h2o (g/Kg)'][int(pr_index[0,0]):int(pr_index[0,1])]
     qv2=cbn_file['MR-h2o (g/Kg)'][int(pr_index[1,0]):int(pr_index[1,1])]
-    
 
     ql1=pd.Series(cbn_file['HPVM LWC'][int(pr_index[0,0]):int(pr_index[0,1])]/rh_a,index=alt1.index)
     ql2=pd.Series(cbn_file['HPVM LWC'][int(pr_index[1,0]):int(pr_index[1,1])]/rh_a,index=alt2.index)
-    
 
     qt1=pd.Series(qv1+ql1,index=alt1.index)
     qt2=pd.Series(qv2+ql2,index=alt2.index)
@@ -125,7 +124,6 @@ def profiles(date,save=False,show=True):
     ax[0][2].set_title(r"$\theta$ start")
     ax[0][2].xaxis.set_major_formatter(FormatStrFormatter('%.1f'))
     ax[1][2].xaxis.set_major_formatter(FormatStrFormatter('%.1f'))
-    
 
     if show:
         plt.show()
@@ -149,7 +147,6 @@ def combined_figure(bg1,bg2,bg3,bg4,phi='qt',tend='FullTend',res='FTres',show=Tr
     ax[0][0].grid()
     ax[0][0].set_axisbelow(True)
     ax[0][0].set_title("July 22")
-
 
     ax[0][1].bar(0.5,bg2['advx1'][phi],1.0,color='red',label='Advx')
     ax[0][1].bar(2.5,bg2['advy1'][phi],1.0,color='orange',label='Advy')
@@ -186,7 +183,7 @@ def combined_figure(bg1,bg2,bg3,bg4,phi='qt',tend='FullTend',res='FTres',show=Tr
     if show:
         plt.show()
     if save:
-        figname="/home/mrmisanthropy/Projects/fase/outputs/figures/combined_budget.png"
+        figname = BASE_DIR + "../outputs/figures/combined_budget.png"
         plt.savefig(figname)
     plt.close()
 
@@ -194,7 +191,7 @@ def coastline_figures(date,save=False,show=True):
     ''' This function is designed to generate figures of the coastline during flight days
 
         inputs should just be a string formatted as "DD_MM_YY"'''
-    root="/home/mrmisanthropy/Projects/fase/flights/" + date+"/"
+    root=BASE_DIR
     wp_file=root + "WP_" + date +".csv"
     st_img = plt.imread(root + "/images/goes-" + date + "-startImage.png")
     ed_img = plt.imread(root + "/images/goes-" + date + "-endImage.png")
@@ -241,7 +238,7 @@ def coastline_figures(date,save=False,show=True):
     ax2.imshow(st_img)
     ax3.imshow(ed_img)
     if save:
-        save_dir = "/home/mrmisanthropy/Projects/fase/outputs/figures/" + date + "/coastline-"+date+".png"
+        save_dir = BASE_DIR+"../outputs/figures/" + date + "/coastline-"+date+".png"
         plt.savefig(save_dir)
     if show:
         plt.show()
