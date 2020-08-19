@@ -30,7 +30,7 @@ def budget(budget,phi='qt',tend='FullTend',res='FTres',cloud_filter=False,date="
     ax.legend(loc='center left',bbox_to_anchor=(1,0.5))
 
     if save:
-        figname=BASE_DIR+"../outputs/figures/"+date+"/{}_budget-".format(phi)+date+".png"
+        figname=BASE_DIR+"/../outputs/figures/"+date+"/{}_budget-".format(phi)+date+".png"
         plt.savefig(figname)
     if show:
         plt.show()
@@ -70,8 +70,8 @@ def profiles(date,save=False,show=True):
     ''' This function plots the qt,ql, and theta profiles for the date provided'''
     
     # Load the profile arrays
-    pr_fname = BASE_DIR+"flights/"+date+"/profile-"+date+".csv"
-    cbn_fname = BASE_DIR+"flights/"+date+"/CABIN_10hz_"+date+".TXT"
+    pr_fname = BASE_DIR+"/flights/"+date+"/profile-"+date+".csv"
+    cbn_fname = BASE_DIR+"/flights/"+date+"/CABIN_10hz_"+date+".TXT"
     
     pr_index=np.loadtxt(pr_fname,delimiter=",")
     cbn_file=pd.read_csv(cbn_fname)
@@ -128,7 +128,7 @@ def profiles(date,save=False,show=True):
     if show:
         plt.show()
     if save:
-        figname = "/home/mrmisanthropy/Projects/fase/outputs/figures/"+date+"/profiles-"+date+".png"
+        figname = BASE_DIR + "/../outputs/figures/"+date+"/profiles-"+date+".png"
         plt.savefig(figname)
     
     # Return each profile object.
